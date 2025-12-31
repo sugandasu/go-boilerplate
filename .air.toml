@@ -1,0 +1,10 @@
+root = "."
+tmp_dir = "tmp"
+
+[build]
+cmd = "go build -o ./tmp/app"
+bin = "tmp/app"
+exclude_dir = ["tmp", "vendor", "docs"]
+
+[run]
+cmd = "./tmp/app server rest"
